@@ -1,0 +1,15 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="insert-application-user-data" author="you">
+        <sql>
+            INSERT INTO application_user (email, password, full_name, phone, role_id, is_active) VALUES
+                                                                                                ('admin@hotel.com', 'admin123', 'Иванов Иван Иванович', '+79161234567', 1, true),
+                                                                                                ('manager@hotel.com', 'manager123', 'Петрова Анна Сергеевна', '+79031234568', 2, true),
+                                                                                                ('user@hotel.com', 'user123', 'Сосарев Иван Иванович', '+79000000000', 3, false);
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
