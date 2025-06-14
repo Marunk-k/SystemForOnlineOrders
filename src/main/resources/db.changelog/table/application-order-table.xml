@@ -4,9 +4,9 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
 
-    <changeSet id="create-orders-table" author="you">
+    <changeSet id="create-application-order-table" author="you">
         <sql>
-            CREATE TABLE orders (
+            CREATE TABLE application_order (
                                     id SERIAL PRIMARY KEY,
                                     user_id INTEGER NOT NULL,
                                     total_amount FLOAT NOT NULL,

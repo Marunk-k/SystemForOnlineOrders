@@ -7,13 +7,14 @@
     <!-- Schema -->
     <include file="table/role-table.xml" relativeToChangelogFile="true"/>
     <include file="table/status-table.xml" relativeToChangelogFile="true"/>
-    <include file="table/part-table.xml" relativeToChangelogFile="true"/>
     <include file="table/supplier-table.xml" relativeToChangelogFile="true"/>
+    <include file="table/part-table.xml" relativeToChangelogFile="true"/>
 
 
-    <include file="table/order-table.xml" relativeToChangelogFile="true"/>
-    <include file="table/order-items-table.xml" relativeToChangelogFile="true"/>
     <include file="table/application-user-table.xml" relativeToChangelogFile="true"/>
+    <include file="table/application-order-table.xml" relativeToChangelogFile="true"/>
+    <include file="table/order-items-table.xml" relativeToChangelogFile="true"/>
+
 
 
     <!-- Data -->

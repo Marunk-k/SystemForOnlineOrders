@@ -13,7 +13,7 @@
                                         quantity INTEGER NOT NULL,
                                         price FLOAT NOT NULL,
                                         PRIMARY KEY (order_id, part_id),
-                                        CONSTRAINT fk_order_item_order FOREIGN KEY (order_id) REFERENCES orders(id),
+                                        CONSTRAINT fk_order_item_order FOREIGN KEY (order_id) REFERENCES application_order(id),
                                         CONSTRAINT fk_order_item_part FOREIGN KEY (part_id) REFERENCES part(id)
             );
         </sql>
