@@ -1,0 +1,17 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="insert-parts-data" author="you">
+        <sql>
+            INSERT INTO part (article, name, price, quantity, supplier_id) VALUES
+                                                                               (1001, 'Тормозные колодки', 2500.50, 15, 1),
+                                                                               (1002, 'Масляный фильтр', 850.00, 30, 2),
+                                                                               (1003, 'Воздушный фильтр', 1200.00, 25, 1),
+                                                                               (1004, 'Свечи зажигания', 1800.75, 40, 3),
+                                                                               (1005, 'Аккумулятор', 7500.00, 8, 2);
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
