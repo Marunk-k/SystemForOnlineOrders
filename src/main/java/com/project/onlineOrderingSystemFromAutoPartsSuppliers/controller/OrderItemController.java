@@ -1,5 +1,6 @@
 package com.project.onlineOrderingSystemFromAutoPartsSuppliers.controller;
 
+import com.project.onlineOrderingSystemFromAutoPartsSuppliers.entity.ApplicationOrder;
 import com.project.onlineOrderingSystemFromAutoPartsSuppliers.entity.OrderItem;
 import com.project.onlineOrderingSystemFromAutoPartsSuppliers.service.OrderItemService;
 import lombok.AllArgsConstructor;
@@ -17,6 +18,11 @@ public class OrderItemController {
     public List<OrderItem> getAllOrderItems() {
 
         return orderItemService.getAllOrderItems();
+    }
+
+    @GetMapping("/getById/{id}")
+    public List<OrderItem> getOrderItemByOrderId(@PathVariable Long id) {
+        return orderItemService.getOrderItemByOrderId(id);
     }
 
     @PostMapping("/add")

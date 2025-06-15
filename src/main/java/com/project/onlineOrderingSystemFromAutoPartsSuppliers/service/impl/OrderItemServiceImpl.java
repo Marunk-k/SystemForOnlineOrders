@@ -1,5 +1,6 @@
 package com.project.onlineOrderingSystemFromAutoPartsSuppliers.service.impl;
 
+import com.project.onlineOrderingSystemFromAutoPartsSuppliers.entity.ApplicationOrder;
 import com.project.onlineOrderingSystemFromAutoPartsSuppliers.entity.OrderItem;
 import com.project.onlineOrderingSystemFromAutoPartsSuppliers.repository.OrderItemRepository;
 import com.project.onlineOrderingSystemFromAutoPartsSuppliers.service.OrderItemService;
@@ -16,6 +17,11 @@ public class OrderItemServiceImpl implements OrderItemService {
     @Override
     public List<OrderItem> getAllOrderItems() {
         return orderItemRepository.findAll();
+    }
+
+    @Override
+    public List<OrderItem> getOrderItemByOrderId(Long id) {
+        return orderItemRepository.getOrderItemByOrderId(id);
     }
 
     @Override
