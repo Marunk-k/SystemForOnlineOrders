@@ -18,6 +18,11 @@ public class ApplicationOrderController {
         return applicationOrderService.getAllOrders();
     }
 
+    @GetMapping("/getById/{id}")
+    public ApplicationOrder getApplicationOrderById(@PathVariable Long id) {
+        return applicationOrderService.getApplicationOrderById(id);
+    }
+
     @PostMapping("/add")
     public ApplicationOrder addOrder(@RequestBody ApplicationOrder applicationOrder) {
         applicationOrderService.addOrder(applicationOrder);
