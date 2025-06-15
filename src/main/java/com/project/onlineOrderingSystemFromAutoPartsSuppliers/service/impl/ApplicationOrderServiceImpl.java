@@ -24,6 +24,11 @@ public class ApplicationOrderServiceImpl implements ApplicationOrderService {
     }
 
     @Override
+    public List<ApplicationOrder> getApplicationOrderByUserId(Long userId) {
+        return applicationOrderRepository.getApplicationOrderItemByUserId(userId);
+    }
+
+    @Override
     public ApplicationOrder addOrder(ApplicationOrder applicationOrder) {
         applicationOrderRepository.save(applicationOrder);
         return applicationOrder;
