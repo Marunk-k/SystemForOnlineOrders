@@ -24,6 +24,12 @@ public class ApplicationOrder {
     @Column(name = "status_id", nullable = false)
     private Integer statusId;
 
+    @Column(name = "address", nullable = false)
+    private String address;
+
+    @Column(name = "receiver", nullable = false)
+    private String receiver;
+
     @Column(name = "created_at", nullable = false)
     private LocalDateTime createdAt;
 }
